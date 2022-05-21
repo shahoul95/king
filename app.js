@@ -14,7 +14,7 @@ app.use((req, res, next) => {
     else { next() }
 });
 
-app.use(kingRouter);
+app.use('/king',kingRouter);
 
 app.listen(port, () => {
     console.log(`Serveur lancé sur http://localhost:${port}`);
